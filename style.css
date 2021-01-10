@@ -1,0 +1,49 @@
+.css
+{
+    background-color: black;
+    color: white;
+}
+
+.a
+{
+    background-color: orange;
+}
+
+img.secciones
+{
+    float: right;
+    height: 280px;
+    width: 250px;
+}
+
+hr.hr
+{
+    background-color: lime;
+    height: 4px;
+}
+
+
+
+
+table{
+    border: red 1px solid;
+}
+td.azul{
+    border: blue 1px solid;
+}
+table.tres{
+    border: rgb(75, 105, 75) 1px solid;
+}
+td.verde1{
+    border: rgb(75, 105, 75) 1px solid;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+td.verde2{
+    border:  rgb(75, 105, 75) 1px solid;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}

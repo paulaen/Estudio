@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function funcion()
+        {
+            alert ("Se ha ejecutado un evento");
+        }
+    </script>
+</head>
+<body>
+    <img src="img/secciones.png" alt="imagen" class="secciones">
+<header>
+    <h1>Header: define la cabezera del documento</h1>
+</header>
+<nav>
+    <h2>Nav: define los enlaces dentro de la web o a otras paginas</h2>
+</nav>
+<main>
+    <h1>Main: agrupa el contenido principal</h1>
+    <section>
+        <h1>Seccion: define una seccion</h1>
+            <article>
+                <h3>Article: contenido independiente detro de seccion</h2>
+            </article>
+            <aside>
+                <h4>Aside: contenido secundario (generalmente anuncios)</h3>
+            </aside>    
+    </section>
+    <hr class="hr">
+    <section>
+        <p><span class="a">p</span>: párrafo</p>
+        <p><span class="a">hr</span>: linea de separación</p>
+        <blockquote><span class="a">blockquote</span>: cita larga (con margenes)</blockquote>
+        <p><span class="a">div</span>: se usa para definir una seccion y darle la misma clase</p>
+        <span><span class="a">span</span>: contenedor de texto</span>
+        <p><em><span class="a">em</span>: cursiva; en css <span class="css">oblique</em></p>
+        <strong><span class="a">strong y b</span>: negrita; </strong><b>en css <span class="css">font-weight: bold</b></b>
+        <p><small><span class="a">small</span>: para hacer mas pequeño un texto; en css <span class="css">font-size: smaller</span></small></p>
+        <p><span class="a">s</span>: <s>texto taxado</s>; en css <span class="css">text-decoration: line-through</span></p>
+        <p><span class="a">time</span>: para indicar una fecha <time datetime="2020-01-10">10 de enero de 2021</time></p>
+        <sub><span class="a">sub</span>: subindice</sub>
+        <sup><span class="a">sup</span>: superindice</sup>
+        <p><i><span class="a">i</span>: tipo de fuente italic; en css <span class="css">font-style: italic</span></i></p>
+        <mark><span class="a">mark</span>: fondo texto amarillo; en css <span class="css">background-color: yellow</span></mark>
+        <p><cite><span class="a">cite</span>: es una cita</cite></p>
+        <p><q><span class="a">q</span>: entrecomillado</q></p>
+        <p><dfn><span class="a">dfn</span>: no se muy bien q es</dfn></p>
+        <p><span class="a">abbr</span>: representa una abreviacion y al pulsar sobre ella aparece ejemplo: <abbr title="Hypertext Markup Language">HTML</abbr></p>    
+        <p><span class="a">img</span>: imagenes</p>
+        <h3>Propiedades imagenes</h3>
+            <p><span class="a">float</span>: situar una imagen, por ejemplo a la izquierda: <span class="css">float: left;</span></p>
+            <p><span class="a">clear</span>: hace que no haya elementos flotantes a la derecha, izquiera o ambos ejemplo: <span class="css">clear: left;</span> o <span class="css">clear: both;</span>></p>
+            <p>para centrar la imagen o bien la ponemos dentro de un texto con la propiedad <span class="css">text-align: center;</span> o con <span class="css">display: block;</span> y <span class="css">margin: auto;</span></p>
+            <p><span class="css">height</span>: altura <span class="css">width</span>: anchura</p>
+    </section>
+    <hr class="hr">
+    <section>
+        <h2>Listas</h2>
+        <ul>
+            <li><span class="a">ul</span>: lista no ordenada</li>
+            <li>se usa <span class="a">li</span> para definir cada linea</li>
+        </ul>
+        <hr>
+        <ul style="list-style-type: circle;">
+            <li><span class="css">list-style-type: circle;</span></li>
+        </ul>
+        <hr>
+        <ul style="list-style-type: square;">
+            <li><span class="css">list-style-type: square;</span></li>
+        </ul>
+        <hr>
+        <ol>
+            <li><span class="a">ol</span>: lista ordenada</li>
+        </ol>
+        <hr>
+        <ol type="A">
+            <li><span class="css">type="A"</span></li>
+        </ol>
+        <hr>
+        <ol type="I">
+            <li> <span class="css">type="I"</span></li>
+        </ol>
+        <hr>
+        <ol reversed>
+            <li><span class="css">reversed</span>: empieza por el final</li>
+            <li>2</li>
+            <li>3</li>
+        </ol>
+        <hr>
+        <ol start="4">
+            <li><span class="css">start="4"</span>: empieza con un numero determinado</li>
+        </ol>
+    </section>
+    <hr class="hr">
+    <section>
+            <h3>Eventos de teclado:</h3>
+    <div>
+        <p>onkeydown (cuando se pulsa una tecla) <input type="text" onkeydown="funcion()"></p>
+        <p>onkeypress (cuando se pulsa y despulsa una tecla) <input type="text" onkeypress="funcion()"></p>
+        <p>onkeyup (cuando se despulsa una tecla) <input type="text" onkeyup="funcion()"></p>
+    </div>
+            <h3>Eventos de formulario:</h3>
+    <div>
+        <p>onblur (cuando un elemento deja de ser seleccionado) <input type="text" onblur="funcion ()"></p>
+        <p>onchange (cuando un elemento cambia) <input type="text" onchange="funcion()"></p>
+        <p>onfocus (cuando se selecciona el elemento) <input type="text" onfocus="funcion()"></p>
+        <p>onreset (cuando hacemos reset al formulario) <input type="text" onreset="funcion()"></p>
+        <p>onselect (cuando un elemento se selecciona <input type="text" onselect="funcion()"></p>
+        <p>onsubmit (cuando un formulario se envia) <input type="text" onsubmit="funcion()"></p>
+    </div>
+            <h3>Eventos de ratón:</h3>
+    <div>
+        <p>onclick (cuando se hace clic) <input type="text" onclick="funcion()"></p>
+        <p>ondblclick (cuando se hace doble clic) <input type="text" ondblclick="funcion()"></p>
+        <p>onmousedown (cuando se pulsa un boton del ratón) <input type="text" onmousedown="funcion()"></p>
+        <p>onmousemove (cuando se mueve el ratón) <input type="text" onmousemove="funcion()"></p>
+        <p>onmouseout (cuando el cursor deja de situarse sobre el elemento) <input type="text" onmouseout="funcion()"></p>
+        <p>onmouseover (cuando el ratón se situa sobre el elemento) <input type="text" onmouseover="funcion()"></p>
+        <p>onmouseup (cuando se despulsa un boton del ratón) <input type="text" onmouseup="funcion()"></p>
+    </div>
+    </section>
+        <tbody>
+            <h1>Tablas</h1>
+            <h2>tabla 1</h2>
+            <table class="1">
+            <tr>
+                <td>A B C <br> 
+                D E F</td>
+            </tr>
+            </table>
+            <h2>tabla 2</h2>
+            <table class="1">
+                <tr>
+                    <td class="azul">A</td> 
+               <td>B</td>
+               <td>C</td> </tr>
+               <tr>
+                    <td>D</td> 
+                    <td>E</td>
+                    <td>F</td> 
+                </tr>
+            </table>
+            <h2>tabla 3</h2>
+            <table border="1" class="tres">
+    <tr>
+        <td class="verde1">A</td>
+        <td class="verde1">B</td>
+        <td class="verde2">C</td>
+    </tr>
+             <tr>
+                 <td class="verde1">D</td>
+                 <td class="verde2" colspan="2">E,F</td>
+             </tr>   
+             <tr>
+             <td class="verde1">G</td>
+             <td class="verde1">H</td>
+             <td class="verde1" rowspan="2"> I,L </td>
+            </tr>
+            <tr>
+                <td class="verde1">J</td>
+                <td class="verde1">K</td>
+            </tr>
+            </table>
+        </tbody>
+</main>
+</body>
+</html>
